@@ -1,4 +1,4 @@
-# Lab:37 - React I
+# Lab:38 - React II
 ## Author: Yu-Wei Hsieh
 
 ## Project Creation
@@ -8,7 +8,11 @@
 - Execute ```npm run dev``` to start the app
 
 ## Image
-![index_page](index_page.JPG)
+If there is no data present:
+![no_data](no_data.JPG)
+
+If data exist:
+![with_data](with_data.JPG)
 
 ## Source:
-https://github.com/codefellows/seattle-code-python-401d19/tree/main/class-37
+https://github.com/codefellows/seattle-code-python-401d19/tree/main/class-38
