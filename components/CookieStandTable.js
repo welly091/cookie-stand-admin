@@ -38,7 +38,7 @@ export default function ReportTable(props){
                 props.reports.map((each_location, index) =>(
                   <tr className={"text-sm" + (index % 2 === 1 ? " bg-emerald-300": " bg-emerald-200" )} key={index}> 
                       <td className=" font-normal text-left border border-black font-semibold flex justify-between">&nbsp;&nbsp;{each_location.location}
-                        <span onClick={() => onDelete(stand.id)}><Image src="/icons8-remove-48.png" /></span>
+                        <span onClick={() => props.onDelete(each_location.id)}><Image src="/delete.png" alt="del" width="18" height="18"  /></span>
                       </td>
                         {each_location.hourly_sales.map((sale,index) =>(
                             <td className="px-2 border border-black font-semibold" key={index}>{sale}</td>
