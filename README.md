@@ -1,11 +1,15 @@
 # Lab:39 - React III
 ## Author: Yu-Wei Hsieh
 
+## .env file
+- In order to access to access to the API,  change the file ``REQUIRED.env.local`` to ``.env.local`` 
+
 ## Project Creation
 - Create a project using the command line:
 ```npx create-next-app cookie-stand-admin```
 - Go the project folder
 - Execute ```npm run dev``` to start the app
+
 
 ## Image
 Login page:
