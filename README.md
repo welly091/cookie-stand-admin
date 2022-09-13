@@ -15,7 +15,7 @@ After login (username:admin, password:admin)
 ![lab39_2](lab39_2.JPG)
 
 Add data:
-![lab39_3](lab39_3.JPG)
+![lab39_3](lab39_03.JPG)
 
 ## Source:
 https://github.com/codefellows/seattle-code-python-401d19/tree/main/class-38
