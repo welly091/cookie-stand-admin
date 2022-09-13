@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
-import CreateForm from '../components/CreateForm'
+import CookieStandAdmin from '../components/CookieStandAdmin'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import CookieStandTable from '../components/CookieStandTable'
@@ -14,7 +14,7 @@ export default function Home() {
   const {user, login, logout} = useAuth();
   const { resources, loading, createResource, deleteResource } = useResource();
 
-  const[data, setData] = useState([])
+  // const[data, setData] = useState([])
 
   function submitHandler(event){
     event.preventDefault();
@@ -24,7 +24,9 @@ export default function Home() {
       "maxCustomers": event.target.maximum.value,
       "avgCookies": event.target.average.value
     }
-    setData([...data, newData])
+    // setData([...data, newData])
+    createResource(newData)
+    event.target.reset();
   }
 
   function handleLogin(event){
@@ -39,7 +41,7 @@ export default function Home() {
         <>
         <Header onClick={logout} name={user.username}/>
         <main className='flex flex-col items-center py-4 bg-emerald-50'>
-          <CreateForm onSubmit={submitHandler}/>
+          <CookieStandAdmin onSubmit={submitHandler}/>
           <CookieStandTable hours={hours} reports={resources} loading={loading} onDelete={deleteResource}/> 
         </main>
         <Footer reports={resources} loading={loading}/>
