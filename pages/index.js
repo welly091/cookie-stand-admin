@@ -20,9 +20,9 @@ export default function Home() {
     event.preventDefault();
     const newData = {
       "location": event.target.location.value,
-      "minCustomers": event.target.minimum.value,
-      "maxCustomers": event.target.maximum.value,
-      "avgCookies": event.target.average.value
+      "minimum_customers_per_hour": event.target.minimum.value,
+      "maximum_customers_per_hour": event.target.maximum.value,
+      "average_cookies_per_sale": event.target.average.value
     }
     // setData([...data, newData])
     createResource(newData)
